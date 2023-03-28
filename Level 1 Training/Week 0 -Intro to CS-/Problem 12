@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int H, W , h , w;
+    cin >> H >> W >> h >> w;
+
+    // number of rows don't paint
+    int row = H - h;
+
+    // number of columns don't paint
+    int col = W - w;
+
+    // number of cells don't paint
+    cout << row * col;
+
+
+    return 0;
+}
